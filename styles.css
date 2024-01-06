@@ -9,7 +9,11 @@ body {
 }
 
 .content {
-    transform: translate(50%, 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 
 .card {
@@ -20,7 +24,9 @@ body {
     background-color: white;
     width: 100%;
     max-width: 400px;
+    border: 1px solid black;
     border-radius: 12px;
+    box-shadow: 10px 10px;
 }
 
 .blog__img {
@@ -56,9 +62,9 @@ h1 {
 
 .preview {
     margin-left: 16px;
-    font-weight: 600;
     font-size: 16px;
     padding: 8px 0;
+    line-height: 1.5;
 }
 
 .author__block {
@@ -75,6 +81,6 @@ h1 {
     margin-right: 8px;
 }
 
-.attribution { font-size: 11px; text-align: center; margin-top: 16px; }
+.attribution { font-size: 11px; text-align: center; margin-top: 20px; }
 
 .attribution a { color: hsl(228, 45%, 44%); }
